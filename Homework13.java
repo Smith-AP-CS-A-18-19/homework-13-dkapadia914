@@ -14,21 +14,22 @@ public class Homework13 {
 	  * and angle. The x and y coordinates should both be 0.
 	  * Return the Triangle.
 	  */
-	 public static Triangle problem1(int w, int h, double a) {f
-
+	 public static Triangle problem1(int w, int h, double a) {
+		 SmithShape tri = new Triangle(0, 0, w, h, a);
+		 return tri;
 	 }
 
 	 /* Return the area of parameter s
 	  */
 	 public static double problem2(SmithShape s) {
-
+		 return s.getArea();
 	 }
 
 	 /* Return the value returned by the toString()
 	  * method of parameter s
 	  */
 	 public static String problem3(SmithShape s) {
-
+		 return "Hi";
 	 }
 
 	 /* Given SmithShape s, which is a Triangle,
@@ -38,14 +39,14 @@ public class Homework13 {
 	  * to 180
 	  */
 	 public static double problem4(SmithShape s, double a) {
-
+		 return -1;
 	 }
 
 	 /* Return the Rectangle2D that is created by the
 	  * toSquare method of parameter s
 	  */
 	 public static Rectangle2D problem5(SmithShape s) {
-
+		 return null;
 	 }
 
 	 public static void main(String[] args) {
