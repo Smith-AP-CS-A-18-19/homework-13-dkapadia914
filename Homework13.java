@@ -16,7 +16,7 @@ public class Homework13 {
 	  */
 	 public static Triangle problem1(int w, int h, double a) {
 		 SmithShape tri = new Triangle(0, 0, w, h, a);
-		 return tri;
+		 return (Triangle)(tri);
 	 }
 
 	 /* Return the area of parameter s
@@ -29,7 +29,7 @@ public class Homework13 {
 	  * method of parameter s
 	  */
 	 public static String problem3(SmithShape s) {
-		 return "Hi";
+			return s.toString();
 	 }
 
 	 /* Given SmithShape s, which is a Triangle,
@@ -39,14 +39,14 @@ public class Homework13 {
 	  * to 180
 	  */
 	 public static double problem4(SmithShape s, double a) {
-		 return -1;
+		 return (180.0 - ((Triangle)(s)).getAngle() - a);
 	 }
 
 	 /* Return the Rectangle2D that is created by the
 	  * toSquare method of parameter s
 	  */
 	 public static Rectangle2D problem5(SmithShape s) {
-		 return null;
+		 return ((Triangle)(s)).toSquare();
 	 }
 
 	 public static void main(String[] args) {
