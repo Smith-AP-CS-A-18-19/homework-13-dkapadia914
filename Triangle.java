@@ -76,6 +76,8 @@ public Triangle(int x, int y, int width, int height, double angle) {
  */
 @Override
  public String toString() {
+	 /* There should be a space after each colon
+	  */
    String returnable = "Width:" + width + "\nHeight:" + height + "\nAngle:" + angle;
    return returnable;
  }
